@@ -40,9 +40,9 @@ I used the following libraries and tools to set up my environment:
 ## Results
 ![Training Curve](training_curve.png)
 #### Train Loss ####
-- loss: 1.5737  
+ loss: 1.5737  
 #### Validation Loss ####
-- val_loss: 2.1633
+ val_loss: 2.1633
 
 1.  I observed that the neural network model was able to predict Boston house prices fairly accurately.
 2.  I experimented with different model configurations and found that deeper networks sometimes improved performance, but also required careful regularization and tuning.
@@ -51,8 +51,7 @@ I used the following libraries and tools to set up my environment:
  
 ## License
 I placed this project under the MIT License. Feel free to use or modify the code according to the license terms.
-
-
+---
 
 
 Thank you for checking out my Boston House Pricing with ANN project. I wrote this project to document my learning and experimentation with neural networks for regression tasks. I hope it proves useful for anyone interested in exploring deep learning for housing price predictions. Feel free to open an issue or submit a pull request if you have suggestions or improvements!
