@@ -1,37 +1,34 @@
 # Boston_house_Pricing_ANN
 I created this repository to document my work on predicting house prices in Boston using an Artificial Neural Network (ANN). I used the well-known Boston housing dataset, which consisted of features such as crime rate, number of rooms, age of the building, and other relevant variables. My goal was to build and train a neural network model that could estimate house prices accurately.
 
-## Project Overview
+## Project Overview ##
 - Objective: I aimed to apply an ANN to predict house prices in Boston.
 - Dataset: I worked with the Boston housing dataset, which I imported from the sklearn.datasets module.
 - Approach: I split the dataset into training and testing subsets, scaled the features, and constructed a neural network to learn the relationship between the input features and house prices. I used Keras (with a TensorFlow backend) for building, training, and evaluating the model.
 
 ## Features of the Project
-### ** Data Preprocessing **
+###  Data Preprocessing ###
 - I handled the dataset by cleaning and normalizing the features.
 - I used train_test_split to divide the data into training and testing sets.
 - I applied feature scaling (StandardScaler) to achieve faster convergence during model training.
 
-### ** Model Architecture **
+### Model Architecture ###
 - I constructed a feedforward neural network using the Keras Sequential API.
 - I experimented with various hyperparameters, including the number of hidden layers, number of neurons, and activation functions.
 - I added dropout layers in some configurations to prevent overfitting.
 
-### ** Model Training**
+### Model Training ###
 - I compiled the model using Mean Squared Error (MSE) as the loss function and the Adam optimizer for gradient-based optimization.
 - I trained the model over multiple epochs, tracked the training and validation losses, and applied early stopping techniques in some trials to prevent overfitting.
  ```
 model_history = model.fit(x = x_train, y = y_train, validation_data = (x_val, y_val), batch_size= 32, epochs=1000)
-
  ```
-### ** Evaluation **
+### Evaluation ###
 - I evaluated the performance of the trained model on the testing set using metrics such as Mean Squared Error (MSE) and Mean Absolute Error (MAE).
 - I plotted learning curves to visualize how the model’s accuracy and loss changed over epochs.
 ```
 test_score = model.evaluate(x_test, y_test)
-
 ```
-
 ## Requirements
 I used the following libraries and tools to set up my environment:
 - Python, - NumPy, - Pandas, - Scikit-learn-TensorFlow (or Keras), - Matplotlib (for data visualization)
